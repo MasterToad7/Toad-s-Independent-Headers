@@ -1,4 +1,4 @@
-#define TIH_NEEDLE_DECLARATION
+#define TIH_NEEDLE_DEFINITIONS
 
 #include <needle.h>
 #include <stdio.h>

@@ -6,11 +6,11 @@ This is a single header version of needle
 The original needle project can be found here:
 https://github.com/MasterToad7/Needle
 
-To use this "independent header" simply define TIH_NEEDLE_DECLARATION
-in somewhere and then include the header in your project
+To use this "independent header" simply define TIH_NEEDLE_DEFINITIONS
+somewhere in the project then include the header
 
 *VERY IMPORTANT* 
-Make sure to only define TIH_NEEDLE_DECLARATION in one c file
+Make sure to only define TIH_NEEDLE_DEFINITIONS in one c file
 */
 
 #ifdef _WIN32
@@ -48,7 +48,7 @@ void ndl_exitThread();
 // Wait for another thread to finish
 void ndl_joinThread(ndl_thread_t* addrThread);
 
-#ifdef TIH_NEEDLE_DECLARATION
+#ifdef TIH_NEEDLE_DEFINITIONS
 
 void ndl_sanityCheck()
 {
